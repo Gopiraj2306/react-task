@@ -16,14 +16,21 @@
   width: 200px;
   height: 250px;
 }
-
+/*
 .image-group.rotate {
+  animation: rotate360 3s ease-in-out forwards;
+}
+.image-group.rotate-once {
   animation: rotate360 3s ease-in-out forwards;
 }
 .image-group:hover {
   animation: rotate360 3s ease-in-out forwards;
 }
-
+*/
+.image-group.animate-once,
+.image-group:hover {
+  animation: rotate360 3s ease-in-out forwards;
+}
 @keyframes rotate360 {
   0% {
     transform: rotateY(0deg);
@@ -44,32 +51,40 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 2s;
 }
-
-/* Fan out positions (can be expanded) */
-/* react task*/
+.image-group.animate-once .stack-image:nth-child(1),
 .image-group:hover .stack-image:nth-child(1) {
   transform: translateX(-150px) translateY(-120px) translateZ(-50px);
 }
+.image-group.animate-once .stack-image:nth-child(2),
 .image-group:hover .stack-image:nth-child(2) {
   transform: translateX(150px) translateY(-60px) translateZ(-100px);
 }
+.image-group.animate-once .stack-image:nth-child(3),
 .image-group:hover .stack-image:nth-child(3) {
   transform: translateX(-160px) translateY(60px) translateZ(-150px);
 }
+.image-group.animate-once .stack-image:nth-child(4),
 .image-group:hover .stack-image:nth-child(4) {
   transform: translateX(150px) translateY(120px) translateZ(-200px);
 }
+.image-group.animate-once .stack-image:nth-child(5),
 .image-group:hover .stack-image:nth-child(5) {
   transform: translateX(-100px) translateY(120px) translateZ(-250px);
 }
+.image-group.animate-once .stack-image:nth-child(6),
 .image-group:hover .stack-image:nth-child(6) {
   transform: translateX(100px) translateY(-180px) translateZ(-300px);
 }
+.image-group.animate-once .stack-image:nth-child(7),
 .image-group:hover .stack-image:nth-child(7) {
   transform: translateX(60px) translateY(-130px) translateZ(-300px);
 }
+.image-group.animate-once .stack-image:nth-child(8),
 .image-group:hover .stack-image:nth-child(8) {
   transform: translateX(-60px) translateY(180px) translateZ(-350px);
 }
+
+
+
 
 
