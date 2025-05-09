@@ -3,13 +3,14 @@ import './image_stack.css';
 
 
 
-const images = ['/assests/pic1.jpg',
-   '/assests/pic2.jpg',
-    '/assests/pic3.jpg', 
-    '/assests/pic4.jpg',
-    '/assests/pic5.jpg',
-    '/assests/gif1.gif',
-    '/assests/gif2.gif'];
+const images = ['/assests/img1.jpg',
+   '/assests/img2.jpg',
+    '/assests/img3.jpg', 
+    '/assests/img4.jpg',
+    '/assests/img5.jpg',
+    '/assests/img6.jpg',
+    '/assests/img7.jpg',
+  '/assests/img8.jpg'];
 
 const ImageStack = () => {
   const [startRotation, setStartRotation] = useState(false);
