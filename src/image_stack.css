@@ -20,6 +20,9 @@
 .image-group.rotate {
   animation: rotate360 3s ease-in-out forwards;
 }
+.image-group:hover {
+  animation: rotate360 3s ease-in-out forwards;
+}
 
 @keyframes rotate360 {
   0% {
@@ -44,30 +47,28 @@
 
 /* Fan out positions (can be expanded) */
 /* react task*/
-.fan-1 {
+.image-group:hover .stack-image:nth-child(1) {
   transform: translateX(-150px) translateY(-120px) translateZ(-50px);
 }
-.fan-2 {
+.image-group:hover .stack-image:nth-child(2) {
   transform: translateX(150px) translateY(-60px) translateZ(-100px);
 }
-.fan-3 {
+.image-group:hover .stack-image:nth-child(3) {
   transform: translateX(-160px) translateY(60px) translateZ(-150px);
 }
-.fan-4 {
+.image-group:hover .stack-image:nth-child(4) {
   transform: translateX(150px) translateY(120px) translateZ(-200px);
 }
-.fan-5 {
+.image-group:hover .stack-image:nth-child(5) {
   transform: translateX(-100px) translateY(120px) translateZ(-250px);
 }
-.fan-6 {
+.image-group:hover .stack-image:nth-child(6) {
   transform: translateX(100px) translateY(-180px) translateZ(-300px);
 }
-
-.fan-7{
+.image-group:hover .stack-image:nth-child(7) {
   transform: translateX(60px) translateY(-130px) translateZ(-300px);
 }
-
-.fan-8 {
+.image-group:hover .stack-image:nth-child(8) {
   transform: translateX(-60px) translateY(180px) translateZ(-350px);
 }
 
