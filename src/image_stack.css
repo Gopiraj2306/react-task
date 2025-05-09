@@ -43,7 +43,7 @@
 }
 
 /* Fan out positions (can be expanded) */
-
+/* react task*/
 .fan-1 {
   transform: translateX(-150px) translateY(-120px) translateZ(-50px);
 }
