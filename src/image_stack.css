@@ -1,0 +1,74 @@
+.stack-scene {
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-group {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  position: relative;
+  transform-origin: center center;
+  width: 200px;
+  height: 250px;
+}
+
+.image-group.rotate {
+  animation: rotate360 3s ease-in-out forwards;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.stack-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 2s;
+}
+
+/* Fan out positions (can be expanded) */
+
+.fan-1 {
+  transform: translateX(-150px) translateY(-120px) translateZ(-50px);
+}
+.fan-2 {
+  transform: translateX(150px) translateY(-60px) translateZ(-100px);
+}
+.fan-3 {
+  transform: translateX(-160px) translateY(60px) translateZ(-150px);
+}
+.fan-4 {
+  transform: translateX(150px) translateY(120px) translateZ(-200px);
+}
+.fan-5 {
+  transform: translateX(-100px) translateY(120px) translateZ(-250px);
+}
+.fan-6 {
+  transform: translateX(100px) translateY(-180px) translateZ(-300px);
+}
+
+.fan-7{
+  transform: translateX(60px) translateY(-130px) translateZ(-300px);
+}
+
+.fan-8 {
+  transform: translateX(-60px) translateY(180px) translateZ(-350px);
+}
+
+
