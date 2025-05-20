@@ -21,7 +21,7 @@ body {
   /* background: radial-gradient(circle, #2b0433, #000); */
   height: 700px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: 175px 200px 200px 175px;
   grid-template-rows: 170px 250px 100px;
   padding: 60px 80px;
   justify-items: stretch;
@@ -171,6 +171,21 @@ body {
 .construction   { grid-column: 2 / 3; grid-row: 3 / 4;  height: 175px; }
 .tourism        { grid-column: 3 / 4; grid-row: 3 / 4;  height: 175px; }
 .automotive     { grid-column: 4 / 5; grid-row: 1 / 4;  height: 175px; }
+@media (max-width: 768px) {
+  .layout-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-template-rows: auto;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .layout-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-template-rows: auto;
+    padding: 40px 20px;
+  }
+}
+
 /* Responsive Media Queries */
 /* @media (max-width: 1024px) {
   .layout-container {
