@@ -16,7 +16,7 @@ const healthCare = [
   './assests/img5.jpg'
 ]
 const manufacturing = [
-  './assests/img4.jpg'
+  './assests/img10.jpg'
 ]
 const retail = [
   './assests/img9.jpg'
