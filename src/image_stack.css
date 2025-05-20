@@ -174,36 +174,32 @@ body {
 
 @media (max-width: 768px) {
   .layout-container {
-    grid-template-columns: 75px 100px 100px 75px;;
-    grid-template-rows: 70px 125px 70px  ;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto;
+    gap: 12px;
     padding: 20px;
-    gap: 16px;
     height: auto;
+    margin-top: 20px;
+    transform: none; /* disable 3D for mobile */
   }
- 
+
   .box {
-    height:200px;
-  }}
-/* 
-  .carousel-title {
-    font-size: 1rem;
-  }}
-
-  .video,
-  .manufacturing,
-  .bfsi,
-  .retail,
-  .construction,
-  .tourism,
-  .automotive {
-    width: 100% !important;
-    height: auto !important;
+    height: auto;
+    aspect-ratio: 3 / 4; /* maintain shape */
+    border-radius: 10px;
   }
 
-  .healthcare,
-  .edtech {
-    grid-column: auto !important;
-    grid-row: auto !important;
-  } */
+  .carousel-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
 
+  /* Reset transforms on mobile */
+  .layout-container.animate-once .box,
+  .layout-container:hover .box {
+    transform: none !important;
+  }
+}
 
