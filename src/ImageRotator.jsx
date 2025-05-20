@@ -10,16 +10,16 @@ const edTech = [
   './assests/img2.jpg', 
 ]
 const bfsi = [
-  './assests/img4.jpg'
+  './assests/img8.jpg'
 ]
 const healthCare = [
-  './assests/img3.jpg'
+  './assests/img5.jpg'
 ]
 const manufacturing = [
   './assests/img4.jpg'
 ]
 const retail = [
-  './assests/img5.jpg'
+  './assests/img9.jpg'
 ]
 const construction = [
   './assests/img6.jpg'
@@ -29,7 +29,7 @@ const tourism= [
 ]
 
 const autoMotive = [
-  './assests/img8.jpg'
+  './assests/img3.jpg'
 ]
 
 const ImageStackLayout = () => {
