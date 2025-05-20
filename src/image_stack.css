@@ -25,7 +25,7 @@ body {
   /* padding: 60px 80px; */
   justify-items: stretch;
   align-items: stretch;
-  gap: 8px;
+  gap: 6px;
   transform-style: preserve-3d;
   /* margin-top: 100px; */
 }
@@ -33,7 +33,7 @@ body {
 @media (max-width: 768px) {
   .layout-container {
     grid-template-columns: 25% 21% 21% 27%;
-    grid-template-rows: 170px 250px 170px;
+    grid-template-rows: 80px 140px 80px;
   }
 }
 
