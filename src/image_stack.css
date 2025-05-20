@@ -174,15 +174,15 @@ body {
 
 @media (max-width: 768px) {
   .layout-container {
-    grid-template-columns: 175px 200px 200px 175px;;
-    grid-template-rows: 170px 250px 100px  ;
+    grid-template-columns: 75px 100px 100px 75px;;
+    grid-template-rows: 70px 125px 70px  ;
     padding: 20px;
     gap: 16px;
     height: auto;
   }
  
   .box {
-    height: 300px;
+    height:200px;
   }}
 /* 
   .carousel-title {
