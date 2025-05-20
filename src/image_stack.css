@@ -172,7 +172,7 @@ body {
 .tourism        { grid-column: 3 / 4; grid-row: 3 / 4;  height: 175px; }
 .automotive     { grid-column: 4 / 5; grid-row: 1 / 4;  height: 175px; }
 /* Responsive Media Queries */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .layout-container {
     transform: scale(0.9);
     padding: 40px 60px;
@@ -228,5 +228,5 @@ body {
     grid-column: auto;
     grid-row: auto;
   }
-}
+} */
 
