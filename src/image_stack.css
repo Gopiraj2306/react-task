@@ -171,77 +171,39 @@ body {
 .construction   { grid-column: 2 / 3; grid-row: 3 / 4;  height: 175px; }
 .tourism        { grid-column: 3 / 4; grid-row: 3 / 4;  height: 175px; }
 .automotive     { grid-column: 4 / 5; grid-row: 1 / 4;  height: 175px; }
-@media (max-width: 768px) {
-  .layout-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
-    grid-template-rows: auto;
-    padding: 40px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .layout-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
-    grid-template-rows: auto;
-    padding: 40px 20px;
-  }
-}
-
-/* Responsive Media Queries */
-/* @media (max-width: 1024px) {
-  .layout-container {
-    transform: scale(0.9);
-    padding: 40px 60px;
-  }
-}
 
 @media (max-width: 768px) {
   .layout-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    height: auto;
+    grid-template-columns: 175px 200px 200px 175px;;
+    grid-template-rows: 170px 250px 100px  ;
     padding: 20px;
-  }
-
-  .box {
-    height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .layout-container {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-   .box {
-    height: 180px;
-  }
-
-  .carousel-title {
-    font-size: 0.9rem;
-  }
-
-  .video {
-    width: 100% !important;
+    gap: 16px;
     height: auto;
-    font-size: 1.2rem;
-    padding: 12px;
-    text-align: center;
   }
+ 
+  .box {
+    height: 300px;
+  }}
+/* 
+  .carousel-title {
+    font-size: 1rem;
+  }}
 
+  .video,
   .manufacturing,
   .bfsi,
   .retail,
   .construction,
   .tourism,
   .automotive {
+    width: 100% !important;
     height: auto !important;
   }
 
   .healthcare,
   .edtech {
-    grid-column: auto;
-    grid-row: auto;
-  }
-} */
+    grid-column: auto !important;
+    grid-row: auto !important;
+  } */
+
 
